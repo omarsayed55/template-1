@@ -10,16 +10,8 @@
 body {
   font-family: "Work Sans", "sans-serif";
 }
-/* End Global Rules */
-/* n */
-
-.parent {
-  background-color: #eee;
-}
 
 .container {
-  background-color: #ccc;
-  width: 600px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -46,3 +38,46 @@ body {
     width: 1170px;
   }
 }
+/* End Global Rules */
+
+/* Start Header */
+.header {
+  padding: 20px;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .logo {
+  width: 60px;
+}
+.header .links {
+  position: relative;
+}
+.header .links .icon {
+  width: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.header .links .icon span {
+  background-color: #333;
+  margin-bottom: 5px;
+  height: 2px;
+}
+.header .links:hover .icon span:nth-last-child(2) {
+  width: 100%;
+}
+.header .links .icon span:first-child {
+  width: 100%;
+}
+.header .links .icon span:nth-child(2) {
+  width: 60%;
+  transition: 0.3s;
+}
+.header .links .icon span:last-child {
+  width: 100%;
+}
+
+/* End Header */
